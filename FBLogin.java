@@ -18,8 +18,6 @@ public class FBLogin {
 		d.get("https://www.facebook.com/");
 		// Verify page title
 		assertEquals(d.getTitle(),"Facebook – log in or sign up");
-		// Print page title
-		System.out.println("Page title is:"+d.getTitle());
 		assertTrue(d.findElement(By.id("email")).isDisplayed());
 		// Enter user name
 		d.findElement(By.id("email")).sendKeys("selenium");
